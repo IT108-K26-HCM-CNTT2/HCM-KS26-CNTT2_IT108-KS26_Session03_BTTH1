@@ -1,0 +1,106 @@
+Phần 1: Phân tích:
+
+1. Sai lầm về vị trí lưu trữ
+
+- Nam lưu bài tập tại:
+
+C:\Windows\System32\Bai Tap Cua Nam\Session 01\bai tap 1.py
+
+Cách lưu này không phù hợp vì C:\Windows\System32 là thư mục hệ thống của Windows. Nếu lưu hoặc chỉnh sửa file trong đây có thể gây nhầm lẫn và ảnh hưởng đến hệ thống
+
+- Nam nên tạo một thư mục riêng để lưu bài tập, ví dụ trên ổ D:
+
+D:\study\python\session-01\
+
+=>Như vậy dữ liệu học tập sẽ được tách khỏi các file hệ thống và dễ quản lý hơn
+2. Sai lầm về cách đặt tên
+
+- Tên Bai Tap Cua Nam và bai tap 1.py có dấu cách, không thống nhất và khó quản lý khi sử dụng bằng Terminal hoặc Git
+
+Nên sử dụng quy tắc kebab-case, viết thường và dùng dấu - để ngăn cách các từ
+
+- Ví dụ:
+
+Bai Tap Cua Nam -> bai-tap-cua-nam
+Session 01 -> session-01
+bai tap 1.py -> bai-tap-1.py
+3. Hiểu lầm về tốc độ mạng
+
+Gói mạng của Nam là 100 Mbps, còn tốc độ tải xuống hiển thị là 12.5 MB/s
+
+Hai đơn vị này khác nhau:
+
+b là bit
+B là Byte
+1 Byte = 8 bit
+
+=>Do đó:
+
+100 Mbps ÷ 8 = 12.5 MB/s
+
+=>Vì vậy tốc độ 12.5 MB/s là phù hợp với gói mạng 100 Mbps. Nhà mạng không lừa Nam trong trường hợp này
+
+4. Vì sao SSD 256 GB lại hiển thị thấp hơn 256 GB?
+
+- Nhà sản xuất thường tính dung lượng theo hệ thập phân:
+
+1 GB = 1.000.000.000 Byte
+
+- Trong khi hệ điều hành có thể hiển thị dung lượng theo cách tính nhị phân:
+
+1 GiB = 1.073.741.824 Byte
+
+- Ngoài ra, một phần dung lượng SSD còn được sử dụng cho hệ thống, phân vùng và các dữ liệu quản lý của ổ đĩa
+
+=>Vì vậy SSD ghi là 256 GB nhưng khi sử dụng thực tế sẽ thấy dung lượng thấp hơn con số 256 GB
+Phần 2: Hoàn thiện: 
+1. Cây thư mục học tập trên ổ D:
+D:\
+└── study
+    ├── python
+    │   ├── session-01
+    │   │   ├── bai-tap-1.py
+    │   │   └── README.md
+    │   ├── session-02
+    │   └── session-03
+    ├── assignments
+    ├── projects
+    └── resources
+
+=>Cây thư mục trên được tổ chức theo hướng đơn giản, dễ tìm và phù hợp để lưu các tài liệu học tập
+
+2. Áp dụng quy tắc 3 cấp
+
+- Có thể hiểu 3 cấp chính như sau:
+
+Cấp 1: study – thư mục học tập chính
+Cấp 2: python, assignments, projects, resources – phân loại nội dung
+Cấp 3: session-01, session-02, session-03 – chia nhỏ theo từng buổi học
+
+=>Cách chia này giúp không để quá nhiều file chung trong một thư mục và dễ tìm bài khi cần
+
+3. Áp dụng 4 trụ cột
+
+- Em tổ chức thư mục theo 4 nhóm:
+
+Trụ cột	Thư mục	Nội dung
+Code	python	Các file mã nguồn Python
+Bài tập	assignments	Bài tập được giao
+Dự án	projects	Các project cá nhân hoặc nhóm
+Tài liệu	resources	Tài liệu, giáo trình, tài nguyên học tập
+4. Quy tắc đặt tên
+
+- Em sử dụng kebab-case để đặt tên thư mục và file:
+
+Viết chữ thường
+Các từ cách nhau bằng dấu -
+Không sử dụng khoảng trắng
+Không sử dụng tên quá dài
+File Python giữ phần mở rộng .py
+
+Ví dụ:
+
+bai-tap-1.py
+session-01
+python-basic-project
+lap-trinh-python
